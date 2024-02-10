@@ -1,34 +1,120 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f2f2f2; /* Set the initial background color of the webpage */
-}
-.container {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 50px auto;
-  width: 100%;
-  max-width: 600px; /* Adjust maximum width as needed */
-  padding: 0 20px;
 }
-.button {
-  padding: 10px 20px;
-  background-color: #3498db;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
+
+.container {
+  width: 50%;
+  height: 100%;
+  margin-top: 175px;
+  margin-left: 100px;
+}
+
+button {
+  margin-bottom: 15px;
+  padding: 15px 13%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 15px;
+  transition: .3s;
   cursor: pointer;
-  margin-bottom: 10px;
 }
-.box {
-  width: 60%; /* Adjust the width as needed */
-  height: 200px; /* Adjust the height as needed */
-  background-color: #3498db; /* Set the initial background color of the box */
+
+button:active {
+  transform: translate(5px, 5px);
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  padding: 10%;
+  margin-right: 200px;
+  margin-top: 210px;
   position: absolute;
-  top: 40%;
-  right: 30%;
-  transform: translate(50%, -50%);
-  transition: background-color 0.5s, top 1s;
+  transform: translateY(-200%);
+  display: flex;
+}
+
+.square.falling {
+  transform: translateY(0);
+  background-color: #ffffff;
+}
+
+button#monday {
+  color: black;
+  background-color: pink;
+}
+
+button#tuesday {
+  color: black;
+  background: skyblue;
+}
+
+button#wednesday {
+  color: black;
+  background: green;
+}
+
+button#thursday {
+  color: black;
+  background: yellow;
+}
+
+button#friday {
+  color: black;
+  background: red;
+}
+
+button#saturday {
+  color: black;
+  background: orange;
+}
+
+button#sunday {
+  color: black;
+  background: purple;
+}
+
+#mondaysquare {
+  background-color: pink;
+  left: 50%;
+  transition: transform 2s ease-out, background-color 50s ease-out;
+}
+
+#tuesdaysquare{
+  background-color: skyblue;
+  left: 50%;
+  transition: transform 2s ease-out, background-color 50s ease-out;
+}
+
+#wednesdaysquare {
+  background-color: green;
+  left: 50%;
+  transition: transform 2s ease-out, background-color 50s ease-out;
+}
+
+#thursdaysquare {
+  background-color: yellow;
+  left: 50%;
+  transition: transform 2s ease-out, background-color 50s ease-out;
+}
+
+#fridaysquare {
+  background-color: red;
+  left: 50%;
+  transition: transform 2s ease-out, background-color 50s ease-out;
+}
+
+#saturdaysquare {
+  background-color: orange;
+  left: 50%;
+  transition: transform 2s ease-out, background-color 50s ease-out;
+}
+
+#sundaysquare {
+  background-color: purple;
+  left: 50%;
+  transition: transform 2s ease-out, background-color 50s ease-out;
 }
