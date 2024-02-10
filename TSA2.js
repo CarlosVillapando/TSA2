@@ -1,9 +1,20 @@
-function animateBox(day, color) {
-  var box = document.getElementById('box');
-  
-  box.style.backgroundColor = color; // Change the background color of the box
-  
-  setTimeout(function() {
-      box.style.top = '50%';
-  }, 100);
-}
+document.addEventListener("DOMContentLoaded", function () {
+  const btns = document.querySelectorAll(".container button");
+  const boxes = document.querySelectorAll(".square");
+
+  btns.forEach(function (btn, index) {
+    btn.addEventListener("click", function () {
+      boxes.forEach(function (box) {
+        box.classList.remove("falling");
+      });
+
+      boxes[index].classList.add("falling");
+
+      if (index > 0)
+        setTimeout(function () {
+          boxes[index - 1].style.backgroundColor = boxes[index - 1].style.borderColor;
+          boxes[index - 1].classList.remove("falling");
+        }, 1000);
+    });
+  });
+});
