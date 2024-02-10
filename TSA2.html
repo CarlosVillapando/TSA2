@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TSA2</title>
-<link rel="stylesheet" href="TSA2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSA2</title>
 </head>
-
-<body>
-
-<div class="container">
-    <button class="button" onclick="animateBox('Monday', '#ff0000')">Monday</button>
-    <button class="button" onclick="animateBox('Tuesday', '#00ff00')">Tuesday</button>
-    <button class="button" onclick="animateBox('Wednesday', '#0000ff')">Wednesday</button>
-    <button class="button" onclick="animateBox('Thursday', '#ffff00')">Thursday</button>
-    <button class="button" onclick="animateBox('Friday', '#ff00ff')">Friday</button>
-    <button class="button" onclick="animateBox('Saturday', '#00ffff')">Saturday</button>
-    <button class="button" onclick="animateBox('Sunday', '#000000')">Sunday</button>
-</div>
-
-<div class="box" id="box"></div>
-
+<link rel="stylesheet" href="TSA2.css">
 <script src="TSA2.js"></script>
+<body>
+    <div class="container">
+        <button id="monday">Monday</button>
+        <button id="tuesday">Tuesday</button>
+        <button id="wednesday">Wednesday</button>
+        <button id="thursday">Thursday</button>
+        <button id="friday">Friday</button>
+        <button id="saturday">Saturday</button>
+        <button id="sunday">Sunday</button>
+    </div>
+    <div class="square" id="mondaysquare"></div>
+    <div class="square" id="tuesdaysquare"></div>
+    <div class="square" id="wednesdaysquare"></div>
+    <div class="square" id="thursdaysquare"></div>
+    <div class="square" id="fridaysquare"></div>
+    <div class="square" id="saturdaysquare"></div>
+    <div class="square" id="sundaysquare"></div>
 </body>
 </html>
